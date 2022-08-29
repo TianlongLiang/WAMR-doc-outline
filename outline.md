@@ -1,6 +1,6 @@
 # WAMR documentation outline
 
-TODO: gitbook, host on github?
+[gitbook](gitbook.com) eligible for Community Plan, free for open source projects
 
 ## 1. Introduction
 
@@ -21,19 +21,22 @@ more details about WebAssmebly can be found in [Appendix A](#appendix-a-webassem
 The basics of WAMR
 
 - what it is
-- main parts it provides and breif introduction of each part
+- why you may want to use it
+- main parts it provides and brief introduction of each part
   - "iwasm" VM core
   - "wamrc" AOT compiler
   - application framework
   - dynamic management
 
-more details about background knowledge(compiler, interpreter, runtime system) are in [Appendix B](#appendix-b-some-background-knowledge)
+more details about background knowledge(compiler, interpreter, runtime system, all other jargons) are in [Appendix B](#appendix-b-some-background-knowledge)
 
 details on how to build and use each part properly and where you may want to use it can be found in [section 3.tutorial](#3-tutorial)
 
 ## 2. Getting started
 
 A hello world program
+
+more example programs in [section 4. Examples](#4-unique-features-and-examples)
 
 ### 2.1 Compile and build on host
 
@@ -43,7 +46,7 @@ dependencies, how to build on different platform...
 
 ### 2.2 Using docker
 
-more example programs in [section 4. Examples](#4-examples)
+suppose to be easier, don't need to worry about dependencies(however, most example programs has to be checked and modified to run in current docker)
 
 ## 3. Tutorial
 
@@ -52,29 +55,35 @@ more example programs in [section 4. Examples](#4-examples)
   - C/C++
   - Python
   - Go
-- debuging
 - benchmark demonstrate performance difference when it comes to use different mode
+- debugging and IDE support
 
-## 4. Examples
+## 4. Unique features and examples
 
-TODO: samples with some more details/docker maybe?
+demonstrate different features with corresponding samples
 
-demonstrate different features
+TODO: add some more details maybe? specific version of dockerfile so don't need to worry about devdocker changes?
 
 ## 5. User case
 
 TODO: details?
 
-## 6. Contributing to WAMR
+## 6. Programmer's Manual
 
-- **Architecture**
-- on coming features
+Programmer’s Manual like [LLVM](https://llvm.org/docs/ProgrammersManual.html#introduction)?
+
+- important APIs
+- TODO: abstract Hierarchy
+
+## 7. Contributing to WAMR
+
+- upcoming features
 - how/what to contribute
 - code styles/guideline
 
 ## Appendix A WebAssembly details
 
-webassembly in action
+Book: webassembly in action
 
 ## Appendix B Some background knowledge
 
