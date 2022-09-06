@@ -1,6 +1,6 @@
 # WAMR documentation outline
 
-[gitbook](gitbook.com) eligible for Community Plan, free for open source projects
+[gitbook](https://gitbook.com) eligible for Community Plan, free for open source projects
 
 ## 1. Introduction
 
@@ -62,7 +62,9 @@ suppose to be easier, don't need to worry about dependencies(however, most examp
 
 demonstrate different features with corresponding samples
 
-TODO: add some more details maybe? specific version of dockerfile so don't need to worry about devdocker changes?
+TODO: add some more details maybe? fixed version of dependencies in a dockerfile so that don't need to worry about devdocker changes?
+
+TODO: existing samples need some modification in order to run properly(tested in devdocker environment)
 
 ## 5. User case
 
