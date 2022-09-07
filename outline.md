@@ -77,11 +77,19 @@ Programmer’s Manual like [LLVM](https://llvm.org/docs/ProgrammersManual.html#i
 - important APIs
 - TODO: abstract Hierarchy
 
-## 7. Contributing to WAMR
+## 7. Community
+
+### 7.1 Contributing to WAMR
 
 - upcoming features
 - how/what to contribute
 - code styles/guideline
+
+### 7.2 Contact us
+
+- github
+- twitter
+- medium
 
 ## Appendix A WebAssembly details
 
