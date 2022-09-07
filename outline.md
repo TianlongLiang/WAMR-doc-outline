@@ -55,16 +55,25 @@ suppose to be easier, don't need to worry about dependencies(however, most examp
   - C/C++
   - Python
   - Go
+- existing document: getting started
+
 - benchmark demonstrate performance difference when it comes to use different mode
+
+TODO: advance
+- memory model and memory tuning 
+- memory profiling 
+- performance profiling
+- call stack dump
+
+## 4. features and examples
+
+- multi-thread
+- multi-module
+- socket
+- XIP
+- linux sgx
+- librats: sgx 
 - debugging and IDE support
-
-## 4. Unique features and examples
-
-demonstrate different features with corresponding samples
-
-TODO: add some more details maybe? fixed version of dependencies in a dockerfile so that don't need to worry about devdocker changes?
-
-TODO: existing samples need some modification in order to run properly(tested in devdocker environment)
 
 ## 5. User case
 
@@ -74,8 +83,9 @@ TODO: details?
 
 Programmer’s Manual like [LLVM](https://llvm.org/docs/ProgrammersManual.html#introduction)?
 
-- important APIs
-- TODO: abstract Hierarchy
+- API list
+  - wasm_export.h
+  - wasm_c_api.h
 
 ## 7. Community
 
