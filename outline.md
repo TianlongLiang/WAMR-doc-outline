@@ -1,6 +1,6 @@
 # WAMR documentation outline
 
-[gitbook](gitbook.com) eligible for Community Plan, free for open source projects
+[gitbook](https://gitbook.com) eligible for Community Plan, free for open source projects
 
 ## 1. Introduction
 
@@ -55,14 +55,25 @@ suppose to be easier, don't need to worry about dependencies(however, most examp
   - C/C++
   - Python
   - Go
+- existing document: getting started
+
 - benchmark demonstrate performance difference when it comes to use different mode
+
+TODO: advance
+- memory model and memory tuning 
+- memory profiling 
+- performance profiling
+- call stack dump
+
+## 4. features and examples
+
+- multi-thread
+- multi-module
+- socket
+- XIP
+- linux sgx
+- librats: sgx 
 - debugging and IDE support
-
-## 4. Unique features and examples
-
-demonstrate different features with corresponding samples
-
-TODO: add some more details maybe? specific version of dockerfile so don't need to worry about devdocker changes?
 
 ## 5. User case
 
@@ -72,14 +83,23 @@ TODO: details?
 
 Programmer’s Manual like [LLVM](https://llvm.org/docs/ProgrammersManual.html#introduction)?
 
-- important APIs
-- TODO: abstract Hierarchy
+- API list
+  - wasm_export.h
+  - wasm_c_api.h
 
-## 7. Contributing to WAMR
+## 7. Community
+
+### 7.1 Contributing to WAMR
 
 - upcoming features
 - how/what to contribute
 - code styles/guideline
+
+### 7.2 Contact us
+
+- github
+- twitter
+- medium
 
 ## Appendix A WebAssembly details
 
