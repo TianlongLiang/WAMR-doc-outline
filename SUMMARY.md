@@ -19,7 +19,7 @@
   * [language embedding](tutorial/language_embedding/README.md)
   * [debugging&IDE support](tutorial/debugging&IDE_support/README.md)
 
-* [Unique features](features/demo_examples/README.md)
+* [Features](features/demo_examples/README.md)
 
 * [User case](features/user_case/README.md)
 
@@ -31,8 +31,10 @@
 
 * [How to contribute](community/contribute-howto.md)
 
+* [WAMR on github](https://github.com/bytecodealliance/wasm-micro-runtime)
+
 ## Appendix
 
-* [Appendix A. WebAssembly details](appendix/webassembly-details.md)
+* [Appendix A. Background knowledge and jargons](appendix/background-knowledge.md)
 
-* [Appendix B. Background knowledge and jargons](appendix/background-knowledge.md)
+* [Appendix B. WebAssembly details](appendix/webassembly-details.md)

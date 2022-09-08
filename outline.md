@@ -36,7 +36,7 @@ details on how to build and use each part properly and where you may want to use
 
 A hello world program
 
-more example programs in [section 4. Examples](#4-unique-features-and-examples)
+more example programs in [section 4. Examples](#4-features-and-examples)
 
 ### 2.1 Compile and build on host
 
@@ -60,8 +60,9 @@ suppose to be easier, don't need to worry about dependencies(however, most examp
 - benchmark demonstrate performance difference when it comes to use different mode
 
 TODO: advance
-- memory model and memory tuning 
-- memory profiling 
+
+- memory model and memory tuning
+- memory profiling
 - performance profiling
 - call stack dump
 
@@ -72,7 +73,7 @@ TODO: advance
 - socket
 - XIP
 - linux sgx
-- librats: sgx 
+- librats: sgx
 - debugging and IDE support
 
 ## 5. User case
