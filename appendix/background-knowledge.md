@@ -1,20 +1,20 @@
 # Some background knowledge
 
-In this section, we aggregate some basic background knowledge and jargons in the field of our project. This section could be served as a refresher for those who has left academia for a while and can't fully recall all the weary details and exact meaning of jargons in compiler course. Also, it would be a nice primer for those who didn't take such course and has interest in such field(and of course, our awesome WAMR project).
+In this section, we aggregate some basic background knowledge and jargon in our project field. This section could be served as a refresher for those who have left academia for a while and cannot fully recall all the weary details and exact meaning of jargon in the Compiler course. Also, it would be an excellent primer for those who did not take such a course and are interested in such a field(and, of course, our fantastic WAMR project).
 
-We think provide such section would be really nice so that you don't have to Google around. If there is anything you find inaccurate, you think should be included, or even better, you have something for us that you think would took this section to next level, do feel free to reach out to us on [Github](TODO:placeholder)!
+We think providing such a section would be excellent so that you do not have to Google around. If there is anything you find inaccurate, you think should be included, or even better, you have something for us that would take this section to the next level, do feel free to reach out to us on [GitHub](TODO: placeholder)!
 
-Without further ado, let's dive right in our exciting recitation/learning journey!
+Without further ado, let us dive right into our exciting recitation/learning journey!
 
 ## 1. Compiler
 
-### 1.1 What is compiler?
+### 1.1 What is Compiler?
 
-Strictly speaking(formal definition you usually find in textbook), compiler is a special computer program, system program(serve as a platform for other software) to be more precise. It takes a source program as input and output a target program as result. Source program is written in source programming language and usually it's a high level programming language such as C/C++, Java, Rust and so on. Target program is written in target programming language would be a low level programing language like assembly. Take C/C++ as an example, the input for gcc compiler(component) is a C/C++ translation unit(a source file along with any header it used), the output is platform dependent assmbly code.
+Strictly speaking(formal definition you usually find in textbooks), the compiler is a special computer program, a system program(serves as a platform for other software), to be more precise. It takes a source program as input and outputs a target program as a result. The source program is written in the source programming language, and usually, it is a high-level programming language such as C/C++, Java, Rust, and so on. The target program is written in a target programming language would be a low-level programming language like assembly. Take C/C++ as an example, the input for GCC compiler(component) is a C/C++ translation unit(a source file along with any header it used), and the output is platform-dependent assembly code.
 
-But in our daily life, what we normally mean when we refer to the word compiler is compiler toolchain, which comprise of a compiler, assembler and linker. Assembler is in charge of translating compiled translation unit(object file) from assembly to truly machine readable machine code and linker is used to link all the parts of the program(object files) together into one executable file. Together they are able to translate our human readable source code(potientially many files) into a program could run on machine.
+However, in our daily life, what we usually mean when we refer to the word compiler is the compiler toolchain, which comprises a compiler, assembler, and linker. The assembler is in charge of translating the compiled translation unit(object file) from assembly to truly machine-readable machine code. The linker is used to link all the parts of the program(object files) into one executable file. Together, they can translate our human-readable source code(potentially many files) into a program that can run on the machine.
 
-For now, we will mainly focused on the more strictly definition, because personally I think the concept and algorithm compiler use more closely pertain to our WAMR project(Also, due to the limited knowledge the writer possess regards the other two parts).
+For now, we will mainly focus on the more strict definition because I think the concept and algorithm compiler use more closely pertain to our WAMR project (Also, due to the writer's limited knowledge regarding the other two parts).
 
 TODO: graph
 
@@ -22,18 +22,28 @@ TODO: graph
 
 TODO: graph
 
-Since we alright know what compiler is, now let's learn more details about compiler. First, let's talk about structure of compiler and the algorithm related to each part. Normally, the compiler is consist of three parts, Front End, Optimizer and Back End:
+Since we alright know what a compiler is, now let's learn more details about compiler. First, let's talk about the structure of the compiler and the algorithm related to each part. Typically, the compiler consists of three parts, Front End, Optimizer and Back End:
 
-- Front End: in some sense, this part is more "mature", the theory involved and actual implementation is more or less stable nowadays. The main purpose it serve is gathering textual information from source-language program and understand it both syntactically and semantically. After that, encoding the knowledge it has into Intermidiate Representation. The theory behind Front End are formal language theory(Scanners & Parsers) and lattice theory(Elaboriation for type checking).
+- Front End: in some sense, this part is more "mature." The theory involved and actual implementation is more or less stable nowadays. Its primary purpose is to gather textual information from source-language programs and understand it syntactically and semantically. After that, it encodes the knowledge it has into Intermediate Representation. The theory behind Front End is formal language theory(Scanners & Parsers) and lattice theory(Elaboration for type checking).
 
-- Optimizer: as the name suggests, the goal of Optimizer is to optimize the performance of our program. Clever readers may be conscious of the difficulty when they hear about the word "optimize". Indeed, the Optimizer is key part of our infrastructure, it analyse the input IR and transform it into definitive IR, normally through multiple pass, gradually accumlate knowledge of the program and apply better(hopefully) transformation to it. The output(definitive IR) is semantically equivalent to input IR so that it preserve the original meaning of the program we are compiling. The list of theory and algorithm could be used for 
+- Optimizer: as the name suggests, the Optimizer's goal is to optimize our program's performance. Clever readers may be conscious of the difficulty when they hear about the word "optimize". Indeed, the Optimizer is very challenging to design and implement since it's a vital part of compiler infrastructure and imposes a heavy performance impact. It analyses the input IR and transforms it into definitive IR, usually through multiple passes, gradually accumulating knowledge of the program and applying a better(hopefully) transformation to it. The output(definitive IR) is semantically equivalent to the input IR to preserve the original meaning of the program we are compiling. The theories and algorithms that could be used for Optimizer are too many to list here. Here are some examples: Number theory, some graph algorithms for static analysis, and fixed-point algorithms for data-flow analysis. It's still an active field that attracts many people to research.
 
-- Back End: like Optimizer, the Back End has many open problems to tackle due to the complexiy nature of the probelm it tries to save
+- Back End: the Back End is in charge of mapping programs (in IR form) to low-level code forms that can run on the target machine. Usually, there is more than one Back End, so the compiler is portable for different platforms (ISA). Its main functionality includes instruction selection, register allocation, and instruction scheduling, in which many algorithms are applied, like heuristic search, graph coloring, and some dynamic programming. Like Optimizer, the Back End has many open problems to tackle and also is a field many people hold great interest in.
 
 ## 2. Interpreter
 
+### 2.1 What is Interpreter?
+
+The interpreter is also a system computer program. Like the compiler, it takes a source program as input; but instead of outputting a target program, it directly executes the program line by line and returns the corresponding results. One thing worth noting is that it's not uncommon for an interpreter to adapt widely used techniques in the compilers to improve its performance. Sometimes they are even used together.
+
+Based on the levels of the source language(high or low) and compilation strategies, the interpreters can be divided into several different categories. Let's look at them in more detail in the following section.
+
+### 2.2 Interpreter variants
+
+- Bytecode interpreters
+
+- Abstract syntax tree interpreter
+
+- Just-in-time compilation
+
 ## 3. Runtime system
-
-- similarity
-
-- difference

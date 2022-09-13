@@ -3,4 +3,4 @@ description: "wanna hear a construction joke? we are still working on it"
 ---
 # WebAssembly details
 
-Meanwhile, if you can't wait to learn more about wasm, check out this Book: _webassembly in action_, it's a great book showcase how to use wasm with Javascript inside browser.
+Meanwhile, if you can't wait to learn more about Wasm, check out this book: _WebAssembly in Action_. It's a great book showcasing how to use Wasm with JavaScript inside a browser.
