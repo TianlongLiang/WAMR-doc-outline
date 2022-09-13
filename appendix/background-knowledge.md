@@ -24,9 +24,11 @@ TODO: graph
 
 Since we alright know what compiler is, now let's learn more details about compiler. First, let's talk about structure of compiler and the algorithm related to each part. Normally, the compiler is consist of three parts, Front End, Optimizer and Back End:
 
-- Front End: in some sense, this part is more "mature", the theory involved and actual implementation is more or less stable nowadays. The main purpose it serve is gathering textual information from source-language program and understand it both syntactically and semantically. After that, encode the knowledge it has into Intermidiate Representation. The theory behind Front End are formal language theory(Scanners & Parsers) and lattice theory(Elaboriation for type checking).
-- Optimizer: the to imp
-- Back End:
+- Front End: in some sense, this part is more "mature", the theory involved and actual implementation is more or less stable nowadays. The main purpose it serve is gathering textual information from source-language program and understand it both syntactically and semantically. After that, encoding the knowledge it has into Intermidiate Representation. The theory behind Front End are formal language theory(Scanners & Parsers) and lattice theory(Elaboriation for type checking).
+
+- Optimizer: as the name suggests, the goal of Optimizer is to optimize the performance of our program. Clever readers may be conscious of the difficulty when they hear about the word "optimize". Indeed, the Optimizer is key part of our infrastructure, it analyse the input IR and transform it into definitive IR, normally through multiple pass, gradually accumlate knowledge of the program and apply better(hopefully) transformation to it. The output(definitive IR) is semantically equivalent to input IR so that it preserve the original meaning of the program we are compiling. The list of theory and algorithm could be used for 
+
+- Back End: like Optimizer, the Back End has many open problems to tackle due to the complexiy nature of the probelm it tries to save
 
 ## 2. Interpreter
 
