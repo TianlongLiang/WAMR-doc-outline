@@ -1,8 +1,8 @@
 # Some background knowledge
 
-In this section, we aggregate some basic background knowledge and jargon in our project field. This section could be served as a refresher for those who have left academia for a while and cannot fully recall all the weary details and exact meaning of jargon in the Compiler course. Also, it would be an excellent primer for those who did not take such a course and are interested in such a field(and, of course, our fantastic WAMR project).
+In this section, we aggregate some basic background knowledge and jargon in our project field. This section could be served as a refresher for those who have left academia for a while and cannot fully recall all the weary details and exact meaning of jargon in the Compiler course. Also, it would be an great primer for those who did not take such a course and are interested in such a field(and, of course, our fantastic WAMR project).
 
-We think providing such a section would be excellent so that you do not have to Google around. If there is anything you find inaccurate, you think should be included, or even better, you have something for us that would take this section to the next level, do feel free to reach out to us on [GitHub](TODO: placeholder)!
+We think providing such a section would be nice so that you do not have to Google around. If there is anything you find inaccurate, you think should be included, or even better, you have something for us that would take this section to the next level, do feel free to reach out to us on [GitHub](https://github.com/bytecodealliance/wasm-micro-runtime)!
 
 Without further ado, let us dive right into our exciting recitation/learning journey!
 
@@ -38,12 +38,22 @@ The interpreter is also a system computer program. Like the compiler, it takes a
 
 Based on the levels of the source language(high or low) and compilation strategies, the interpreters can be divided into several different categories. Let's look at them in more detail in the following section.
 
-### 2.2 Interpreter variants
+### 2.2  Technique and jargon in Interpreter
 
-- Bytecode interpreters
+- Bytecode:
 
-- Abstract syntax tree interpreter
+  The bytecode is a kind of low-level programming language in a very highly optimized and compact format. It could be the target language for the compiler. Because the instruction-like bytecode can be executed line by line in an interpreter on any platform, regardless of what hardware-related ISA it uses, it is also called p-code(portable). One example of bytecode you may be familiar with is Java bytecode.
+  
+- Ahead-of-time(AOT) and Just-in-time(JIT) compilation:
 
-- Just-in-time compilation
+  - AOT: as the name suggests, the AOT compilation means that the compilation happens before the program run time. Normally the target language after  AOT compilation is some low-level machine code or bytecode. Then the compiled code can be executed by either a process VM or a normal computer.
+
+  - JIT: just in time compilation is a technique widely adapted by the interpreter to improve its performance. It detects the heavily used code section when interpreting the program and compiles them into more efficient machine code. When that code section is called again, the machine code is executed rather than having the bytecode interpreted. 
 
 ## 3. Runtime system
+
+## 4. Virtual machines
+
+When it comes to the word "Virtual Machines," we usually would remember or refer to is that System virtual machines managed by hypervisors such as KVM, VirtualBox, or VMware. We often use them as a substitute for real computers to resolve dependency or compatibility issues for courses or daily work.
+
+But there is also another type of virtual machine you may have heard of(even you may get really confused at first) and related more closely to the field where our project is in. That is process (application) virtual machines, which provide an environment independent of hardware, aiming to run computer programs written in a certain language. Take JVM as an example, it provides an environment for Java bytecode to execute across many platforms. 
