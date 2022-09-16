@@ -50,10 +50,12 @@ Based on the levels of the source language(high or low) and compilation strategi
 
   - JIT: just in time compilation is a technique widely adapted by the interpreter to improve its performance. It detects the heavily used code section when interpreting the program and compiles them into more efficient machine code. When that code section is called again, the machine code is executed rather than having the bytecode interpreted. 
 
-## 3. Runtime system
-
-## 4. Virtual machines
+## 3. Virtual machines
 
 When it comes to the word "Virtual Machines," we usually would remember or refer to is that System virtual machines managed by hypervisors such as KVM, VirtualBox, or VMware. We often use them as a substitute for real computers to resolve dependency or compatibility issues for courses or daily work.
 
 But there is also another type of virtual machine you may have heard of(even you may get really confused at first) and related more closely to the field where our project is in. That is process (application) virtual machines, which provide an environment independent of hardware, aiming to run computer programs written in a certain language. Take JVM as an example, it provides an environment for Java bytecode to execute across many platforms. 
+
+## 4. Runtime system
+
+It's rather a vague term that is really difficult to explain or understand. To make things worse, when people sometimes refer to it as runtime, it's easily confused with compilation runtime, runtime library. The runtime system is an infrastructure that participates in the creation and running of our program. Typically, the components are the execution environment(Application VM maybe) to provide a place for the program to run, and the compiler front end or/and compiler back end to do the necessary analysis, transformation(from source code to bytecode) and optimization. 
