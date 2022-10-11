@@ -17,7 +17,7 @@ What make it even better is that like Javascript, shortly after the appearance o
 ### A browser example
 The most straightforward place you could think of when it comes to the use of WebAssembly is in browser. 
 
-Emscripten is a compiler toolchain to WebAssembly, maybe the most famous one. It took the C/C++(or any other programming language LLVM frontend support) source program as input and translate it into WebAssembly target program module.
+Emscripten is a compiler toolchain to WebAssembly. It took the C/C++(or any other programming language LLVM frontend support) source program as input and translate it into WebAssembly target program module.
 
 Optionally, a HTML and a Javascript file are generated along side with wasm file, so the pluming JS code are ready for you to use to call your wasm module. And you could open html on your browser to see the result of your wasm program. 
 

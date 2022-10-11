@@ -1,6 +1,6 @@
 # Summary: structure of chapters and subchapters of the book
 
-* [Introduction](README.md)
+* [WAMR document home page](home_page.md)
 
 ## Basics
 
@@ -11,6 +11,7 @@
 * [Getting started](gitbook/basics/getting_started/README.md)
   * [hello world program on host](gitbook/basics/getting_started/on-host.md)
   * [hello world program on docker](gitbook/basics/getting_started/on-docker.md)
+  * [How to build wasm application](doc/build_wasm_app.md)
 
 ## WAMR in practice
 
