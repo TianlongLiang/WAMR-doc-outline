@@ -16,11 +16,11 @@ However, in our daily life, what we usually mean when we refer to the word compi
 
 For now, we will mainly focus on the more strict definition because I think the concept and algorithm compiler use more closely pertain to our WAMR project (Also, due to the writer's limited knowledge regarding the other two parts).
 
-TODO: graph
+<!-- TODO: graph -->
 
 ### 1.2 Structure and algorithm involved
 
-TODO: graph
+<!-- TODO: graph -->
 
 Since we alright know what a compiler is, now let's learn more details about compiler. First, let's talk about the structure of the compiler and the algorithm related to each part. Typically, the compiler consists of three parts, Front End, Optimizer and Back End:
 

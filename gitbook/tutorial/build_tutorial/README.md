@@ -1,3 +1,6 @@
 # build tutorial
 
-how to build different parts with different mode on different platforms , and how to decide which mode to apply based on corresponding scene
+In this chapter, we provide detailed tutorial to how to build [iwasm vmcore](../../../doc/build_wamr.md) and [wamrc](../build_tutorial/build_wamrc.md). 
+
+Our powerful **iwasm vmcore** provide various running mode you could choose using the compile CMake option. Here is the matrix for different running mode and their attributes:
+

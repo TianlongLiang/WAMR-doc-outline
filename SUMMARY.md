@@ -9,7 +9,9 @@
   * [WAMR project](gitbook/basics/introduction/wamr-project.md)
 
 * [Getting started](gitbook/basics/getting_started/README.md)
+  * [host environment preparation](gitbook/basics/getting_started/host-prerequsites)
   * [hello world program on host](gitbook/basics/getting_started/on-host.md)
+  * [docker environment preparation](doc/devcontainer.md)
   * [hello world program on docker](gitbook/basics/getting_started/on-docker.md)
   * [How to build wasm application](doc/build_wasm_app.md)
 
@@ -17,6 +19,8 @@
 
 * [Tutorial](gitbook/tutorial/README.md)
   * [build tutorial](gitbook/tutorial/build_tutorial/README.md)
+    * [build iwasm](doc/build_wamr.md)
+    * [build wamrc](gitbook/tutorial/build_tutorial/build_wamrc.md)
   * [language embedding](gitbook/tutorial/language_embedding/README.md)
   * [debugging&IDE support](gitbook/tutorial/debugging&IDE_support/README.md)
 
