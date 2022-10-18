@@ -5,7 +5,9 @@ In this section, you'll learn how to run a simple hello world wasm program eithe
 Now, last piece of gibberish before you get your hand dirty:
 
 Clone our source code repo use
+
 ```sh
 git clone https://github.com/bytecodealliance/wasm-micro-runtime.git
 ```
+
 or download from <https://github.com/bytecodealliance/wasm-micro-runtime> use any way you like

@@ -1,45 +1,47 @@
 # Summary: structure of chapters and subchapters of the book
 
-* [WAMR document home page](home_page.md)
+* [WAMR Document Home Page](home_page.md)
 
 ## Basics
 
 * [Introduction](gitbook/basics/introduction/README.md)
   * [WebAssembly](gitbook/basics/introduction/webassembly.md)
-  * [WAMR project](gitbook/basics/introduction/wamr-project.md)
+  * [WAMR Project](gitbook/basics/introduction/wamr-project.md)
 
-* [Getting started](gitbook/basics/getting_started/README.md)
-  * [host environment preparation](gitbook/basics/getting_started/host-prerequsites)
-  * [hello world program on host](gitbook/basics/getting_started/on-host.md)
-  * [docker environment preparation](doc/devcontainer.md)
-  * [hello world program on docker](gitbook/basics/getting_started/on-docker.md)
-  * [How to build wasm application](doc/build_wasm_app.md)
+* [Getting Started](gitbook/basics/getting_started/README.md)
+  * [Host Environment Preparation](gitbook/basics/getting_started/host-prerequsites.md)
+  * [Hello-world Program On Host](gitbook/basics/getting_started/on-host.md)
+  * [Docker Environment Preparation](doc/devcontainer.md)
+  * [Hello-world Program On Docker](gitbook/basics/getting_started/on-docker.md)
+  * [How To Build Wasm Application](doc/build_wasm_app.md)
 
 ## WAMR in practice
 
 * [Tutorial](gitbook/tutorial/README.md)
-  * [build tutorial](gitbook/tutorial/build_tutorial/README.md)
-    * [build iwasm](doc/build_wamr.md)
-    * [build wamrc](gitbook/tutorial/build_tutorial/build_wamrc.md)
-  * [language embedding](gitbook/tutorial/language_embedding/README.md)
-  * [debugging&IDE support](gitbook/tutorial/debugging&IDE_support/README.md)
+  * [Build Tutorial](gitbook/tutorial/build_tutorial/README.md)
+    * [Build Iwasm](doc/build_wamr.md)
+    * [Build Wamrc](gitbook/tutorial/build_tutorial/build_wamrc.md)
+  * [Language Embedding](gitbook/tutorial/language_embedding/README.md)
+  * [Debugging&IDE Support](gitbook/tutorial/debugging&IDE_support/README.md)
 
 * [Features](gitbook/features/demo_examples/README.md)
 
-* [User case](gitbook/features/user_case/README.md)
+* [User Case](gitbook/features/user_case/README.md)
 
 ## Programmer's manual
 
-* [Programmer's manual](gitbook/programmer's_manual/README.md)
+* [Programmer's Manual](gitbook/programmer's_manual/README.md)
 
 ## Community
 
-* [How to contribute](gitbook/community/contribute-howto.md)
+* [How To Contribute](gitbook/community/contribute-howto.md)
 
-* [WAMR on github](https://github.com/bytecodealliance/wasm-micro-runtime)
+* [WAMR On Github](https://github.com/bytecodealliance/wasm-micro-runtime)
+
+* [WAMR Blogs](https://bytecodealliance.github.io/wamr.dev/)
 
 ## Appendix
 
-* [Appendix A. Background knowledge and jargons](gitbook/appendix/background-knowledge.md)
+* [Appendix A. Background Knowledge And Jargons](gitbook/appendix/background-knowledge.md)
 
-* [Appendix B. WebAssembly details](gitbook/appendix/webassembly-details.md)
+* [Appendix B. WebAssembly Details](gitbook/appendix/webassembly-details.md)
